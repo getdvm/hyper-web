@@ -1,0 +1,50 @@
+.why-hyper {
+	background-image: $gradientGreenTurquoise;
+	background-size: cover;
+	padding-top: 118px;
+	padding-bottom: 102px;
+	position: relative;
+	color: #303030;
+	
+	h2 {
+		font-family: $fontHeading;
+		font-size: 28px;
+		margin: 0;
+		color: #303030;
+		text-transform: uppercase;
+		font-weight: 800;
+		
+		@media #{$medium-up} {
+			font-size: 32px;			
+		}
+	}
+	
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		height: 118px;
+		left: 0;
+		background: url($imgsPath + 'why-block-top.svg') repeat-x center bottom;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		height: 102px;
+		left: 0;
+		background: url($imgsPath + 'why-block-bottom.svg') repeat-x center top;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	.why-hyper__bottom {
+		
+		@media #{$medium-up} {
+			margin-bottom: 20px!important;	
+		}
+	}
+}

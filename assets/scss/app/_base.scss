@@ -1,0 +1,94 @@
+/*
+ * HYPER
+ *
+ *
+ */
+ 
+@mixin rounded ($radius: 50%) {
+	@include border-top-radius($radius);
+	@include border-right-radius($radius);
+	@include border-bottom-radius($radius);
+	@include border-left-radius($radius);
+} 
+ 
+
+// Set relative font sizes
+
+html {
+	font-size: 14px;
+	line-height: 1.2em;
+	
+	@media #{$medium-up} {
+		font-size: 18px;			
+	}
+} 
+
+
+// Helper classes
+
+.underscore {
+	
+	&:after {
+		content: "_";
+	}
+}
+
+.border {
+	border:1px solid white;
+}
+
+.border-blue {
+	border:1px solid $blueDark;
+}
+
+.violet-light {
+	color: $violetLight!important;
+}
+
+.violet-light-background {
+	background-color: $violetLight!important;
+}
+
+.blue-dark {
+	color: $blueDark!important;
+}
+
+.blue-dark-background {
+	background-color: $blueDark!important;
+}
+
+.white {
+	color: white!important;
+}
+
+.white-background {
+	color: white!important;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: none;
+}
+
+.placeholder {
+	min-height: 155px;
+	background: $blueLight;
+	margin: 30px 0;
+	opacity: .3;
+	
+	&.large {
+		min-height: 260px;
+		
+		@media #{$medium-up} {
+			height: 460px;			
+		}
+	}
+	
+	&.small {
+		min-height: 50px;
+		margin: 0;
+	}
+}

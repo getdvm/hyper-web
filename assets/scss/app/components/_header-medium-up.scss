@@ -1,0 +1,28 @@
+#medium-up-header {
+	height: 80px;
+	padding: 24px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+		
+	nav {
+		
+		&:first-child {
+			float: left;
+		}
+		
+		&:last-child {
+			float: right;
+		}
+	}
+	
+	ul {
+		font-size: rem(14);
+		
+		li {
+			line-height: 32px;
+		}
+	}
+}

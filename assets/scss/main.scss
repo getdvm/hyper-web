@@ -1,0 +1,139 @@
+// Images
+
+$imgsPath: '../imgs/';
+
+// Fonts
+
+$fontsPath: '../fonts/';
+
+$fontText : 'Lato', sans-serif;
+
+$fontHeading : 'Oswald', sans-serif;
+
+$fontRoundedBold : 'moonbold', sans-serif;
+
+$fontRoundedLight : 'moonlight', sans-serif;
+
+// Colors
+
+//Dark Blue (TEXT) Hex: #01baba
+$blueDark : #01baba;
+
+//Light Blue (HOVER) Hex: #2cd1c9
+$blueLight : #2cd1c9;
+
+//Light Violet (TEXT) Hex: #932f8c
+$violetLight : #932f8c;
+
+//Dark Violent (HOVER)Hex: #7a117a
+$violetDark : #7a117a;
+
+//White (TEXT) Hex: #ffffff
+$white : #ffffff;
+
+//Light Grey (HOVER) Hex: #e8e8e8
+$greyLight : #e8e8e8;
+
+//Light Black (Backgrounds) Hex: #282828
+$blackLight : #282828;
+
+//Dark Black (Backgrounds navigation) Hex: #212121
+$blackDark : #212121;
+
+//Gradient Light Green Hex: #cadb41
+$greenGradient : #cadb41;
+
+//Gradient Light Turquoise Hex: #01baba
+$turquoiseGradient : #01baba;
+
+$gradientGreenTurquoise : url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc3NyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI2NhZGI0MSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzAxYmFiYSIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzc3KSIgLz4KPC9zdmc+);
+
+// Import Bourbon: http://bourbon.io/
+
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+
+// Import Fonts
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,900,900italic,700|Oswald:400,300,700);
+@include font-face('moonbold', $fontsPath + 'moon_bold-webfont', normal, normal);
+@include font-face('moonlight', $fontsPath + 'moon_light-webfont', normal, normal);
+
+// Import Normalize
+
+@import "../bower_components/foundation/scss/normalize";
+
+
+// Import Foundation: http://foundation.zurb.com/
+
+@import "settings";
+
+@import
+//  "../bower_components/foundation/scss/foundation/components/accordion",
+//  "../bower_components/foundation/scss/foundation/components/alert-boxes",
+//	"../bower_components/foundation/scss/foundation/components/block-grid",
+//  "../bower_components/foundation/scss/foundation/components/breadcrumbs",
+//  "../bower_components/foundation/scss/foundation/components/button-groups",
+//  "../bower_components/foundation/scss/foundation/components/buttons",
+//  "../bower_components/foundation/scss/foundation/components/clearing",
+//  "../bower_components/foundation/scss/foundation/components/dropdown",
+//  "../bower_components/foundation/scss/foundation/components/dropdown-buttons",
+//	"../bower_components/foundation/scss/foundation/components/flex-video",
+//  "../bower_components/foundation/scss/foundation/components/forms",
+	"../bower_components/foundation/scss/foundation/components/grid",
+//  "../bower_components/foundation/scss/foundation/components/inline-lists",
+//  "../bower_components/foundation/scss/foundation/components/joyride",
+//  "../bower_components/foundation/scss/foundation/components/keystrokes",
+//  "../bower_components/foundation/scss/foundation/components/labels",
+//  "../bower_components/foundation/scss/foundation/components/magellan",
+//  "../bower_components/foundation/scss/foundation/components/orbit",
+//  "../bower_components/foundation/scss/foundation/components/pagination",
+//  "../bower_components/foundation/scss/foundation/components/panels",
+//  "../bower_components/foundation/scss/foundation/components/pricing-tables",
+//  "../bower_components/foundation/scss/foundation/components/progress-bars",
+//  "../bower_components/foundation/scss/foundation/components/reveal",
+//  "../bower_components/foundation/scss/foundation/components/side-nav",
+//  "../bower_components/foundation/scss/foundation/components/split-buttons",
+//  "../bower_components/foundation/scss/foundation/components/sub-nav",
+//  "../bower_components/foundation/scss/foundation/components/switches",
+    "../bower_components/foundation/scss/foundation/components/tables",
+//  "../bower_components/foundation/scss/foundation/components/tabs",
+//  "../bower_components/foundation/scss/foundation/components/thumbs",
+//  "../bower_components/foundation/scss/foundation/components/tooltips",
+//  "../bower_components/foundation/scss/foundation/components/top-bar",
+    "../bower_components/foundation/scss/foundation/components/type",
+//	"../bower_components/foundation/scss/foundation/components/offcanvas",
+	"../bower_components/foundation/scss/foundation/components/visibility";
+	
+	
+// Prism: http://prismjs.com/
+
+@import 
+	"../bower_components/prism/themes/prism.css",
+	"../bower_components/prism/themes/prism-okaidia.css";	
+
+// App
+@import 
+	"app/base";
+
+// Elements
+@import 
+	"app/elements/nav",
+	"app/elements/map",
+	"app/elements/button",
+	"app/elements/table";
+
+// Components
+@import 
+	"app/components/footer",
+	"app/components/header",
+	"app/components/header-small",
+	"app/components/header-medium-up",
+	"app/components/header-docs-medium-up";
+
+// Sections
+@import 
+	"app/sections/start",
+	"app/sections/get-started",
+	"app/sections/features",
+	"app/sections/why-hyper",
+	"app/sections/docs";

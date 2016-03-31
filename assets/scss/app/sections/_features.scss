@@ -1,0 +1,126 @@
+.features {
+	
+	.features__header {
+		position: relative;
+		background: $blackDark;
+		margin-bottom:3px; 
+		
+		text-align: center;
+		
+		&:after {
+			content: "";
+			display: block;
+			height: 3px;
+			position: absolute;
+			width: 100%;
+			background: $gradientGreenTurquoise;
+			z-index: 1;
+		}
+	}
+	
+	.features__pager {
+		padding: 60px 0 0 0;
+		
+		@media #{$large-up} {
+			overflow: hidden;	
+		}
+		
+		a {
+			display: inline-block;
+			height: 40px;
+			width: 40px;
+			background: url($imgsPath + 'pager.svg') no-repeat center center;
+			
+			@media #{$large-up} {
+				width: 20%;
+				height: auto;
+				display: block;
+				background: none;
+				float: left;	
+			}
+			
+			span {
+				font-family: $fontRoundedBold;
+				color: $violetLight;  
+				font-size: 20px;
+				text-transform: uppercase;
+				display: none;
+				line-height: 1;
+				padding: 0 90px;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				top: 50%;
+				transform: translateY(-50%);
+				margin-top: -15px;
+				
+				@media #{$medium-up} {
+					font-size: 32px;			
+				}
+				
+				@media #{$large-up} {
+					display: block;	
+					font-size: 18px;
+					padding: 0 20px;
+					top: 50%;
+					transform: translateY(-50%);
+					position: relative;
+					margin-top: 0;
+					left: auto;
+					//	padding: 0 20px;
+				}
+			}
+			
+			&.cycle-pager-active {
+				background-image: url($imgsPath + 'pager-active.svg');
+				
+				@media #{$large-up} {
+					background: none;
+				}
+				
+				span {
+					display: block;
+					
+					@media #{$large-up} {
+						color: $blueDark;
+					}
+				}
+			}
+		}
+	}
+	
+	.features__slide {
+		background: white;
+		
+		@media #{$large-up} {
+			padding-top: 50px;	
+		}
+		
+		h2 {
+			font-size: 32px;
+			color: $blueDark;
+			text-transform: uppercase;
+			font-weight: 800;
+		}
+
+		p {
+			margin: 1.25rem 0;
+		}
+		
+		video {
+			max-width: 100%;
+		}
+	}
+	
+	.features__bottom {
+		margin-top: 16px;
+		
+		@media #{$medium-up} {
+			margin-top: 20px;			
+		}
+		
+		@media #{$large-up} {
+			margin-top: 0;	
+		}
+	}
+}

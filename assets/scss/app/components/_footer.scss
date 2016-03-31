@@ -1,0 +1,96 @@
+footer {
+	padding: 25px 0 0 0;
+	background: $blackDark;
+	
+	@media #{$medium-up} {
+		padding-top: 50px;			
+	}
+	
+	p {
+		margin: 0;
+		color: white;
+		font-size: 9px;
+		
+		@media #{$medium-up} {
+			font-size: 10px;			
+		}
+	}
+	
+	nav {
+		margin-bottom: 25px;
+	}
+	
+	.footer__top {
+		position: relative;
+	}
+	
+	.footer__bottom {
+		padding-bottom: 25px;
+		
+		@media #{$large-up} {
+			padding-top: 60px;	
+		}
+		
+		p a {
+			color: white;
+		}
+	}
+	
+	.social-networks {
+
+		@media #{$medium-up} {
+			padding: 20px 6px 0 6px;	
+		}
+	}
+	
+	// Alternate display for footer when in Docs page
+	
+	.docs & {
+		padding-top: 70px;
+		position: relative;
+		background: transparent;
+		
+		> div {
+			background: $blackDark;
+		}
+		
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			height: 70px;
+			left: 0;
+			background: url($imgsPath + 'start-block-bottom.svg') repeat-x center top;
+			width: 100%;
+		}
+		
+		.footer__top {
+			padding-top: 40px;
+		}
+	}
+}
+
+.social-networks {
+	margin: 0;
+	
+	li {
+		display: inline-block;
+		
+		a {
+			text-indent: -9999px;
+			display: block;
+			width: 28px;
+			height: 28px;
+			
+			&.github { background: transparent url($imgsPath + 'github.svg') no-repeat left top; }
+			
+			&.twitter { background: transparent url($imgsPath + 'twitter.svg') no-repeat left top; }
+			
+			&.facebook { background: transparent url($imgsPath + 'facebook.svg') no-repeat left top; }
+			
+			&.vimeo { background: transparent url($imgsPath + 'vimeo.svg') no-repeat left top; }
+			
+			
+		}
+	}
+}

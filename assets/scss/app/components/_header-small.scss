@@ -1,0 +1,63 @@
+#small-header {
+	background: $blackDark;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	z-index: 1000;
+	text-align: right;
+	
+	ul {
+		display: inline-block;
+		margin: 0;
+		
+		li {
+			line-height: 50px;
+		}
+	}
+}
+
+#small-menu {
+	background: rgba(33, 33, 33, .9);
+	height: 100vh;
+	display: none;
+	z-index: 1000;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    padding: 0 18px;
+    
+    ul {
+		font-size: 18px;
+		padding-top: 10px;
+		
+		li {
+		
+			a {
+				line-height: 40px;
+			}
+		}
+	}
+}
+
+#small-menu-toggle {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	z-index: 1100;
+	background: transparent url($imgsPath + 'toggle-menu.svg') no-repeat center center;
+	display: block;
+	border: none;
+	outline: 0!important;
+	-webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+	
+	&.is-active {
+		@include transform(rotate(90deg));	
+	}
+}

@@ -1,0 +1,62 @@
+a.button,
+button {
+	display: inline-block;
+	height: 32px;
+	padding: 0 15px;
+	border-width: 2px;
+	border-style: solid;
+	font-size: rem(14);
+	background: transparent;
+	
+	&.violet-light {
+		@extend .violet-light;
+		border-color: $violetLight;
+	}
+	
+	&.blue-dark {
+		@extend .blue-dark;
+		border-color: $blueDark;
+	}
+	
+	&.white {
+		@extend .white;
+		border-color: white;
+	}
+	
+	&:hover {
+		
+		&.violet-light {
+			color: white!important;
+			background-color: $violetLight;
+		}
+		
+		&.blue-dark {
+			color: white!important;
+			background-color: $blueDark;
+		}
+		
+		&.white {
+			color: black!important;
+			background-color: white;
+		}
+	}
+}
+
+.more {
+	font-size: 14px;
+	color: $violetLight;
+	font-family: $fontRoundedBold;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0 0 0 25px;
+	height: 20px;
+	line-height: 22px;
+	background: transparent url($imgsPath + 'plus.svg') no-repeat left top;
+	background-size: contain;
+	
+	@media #{$medium-up} {
+		font-size: 18px;			
+	}
+}
+
+button::-moz-focus-inner {border:0; padding:0;}

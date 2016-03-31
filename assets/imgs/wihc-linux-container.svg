@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="350px" height="290.95px" viewBox="0 0 350 290.95" enable-background="new 0 0 350 290.95" xml:space="preserve">
+<g>
+	<g>
+		<rect x="14.376" y="228.999" fill="#E8E8E8" width="321.248" height="34.75"/>
+		<g opacity="0.15">
+			<path fill="#94318D" d="M350,120.293c0-4.4-3.6-8-8-8H8c-4.4,0-8,3.6-8,8v91.609c0,4.4,3.6,8,8,8h334c4.4,0,8-3.6,8-8V120.293z"
+				/>
+			<path fill="none" stroke="#94318D" stroke-width="2" stroke-miterlimit="10" d="M350,120.293c0-4.4-3.6-8-8-8H8c-4.4,0-8,3.6-8,8
+				v91.609c0,4.4,3.6,8,8,8h334c4.4,0,8-3.6,8-8V120.293z"/>
+		</g>
+		<g>
+			<path fill="#782779" d="M116.037,160.477c0-2.2-1.8-4-4-4H18.376c-2.2,0-4,1.8-4,4v45.879c0,2.2,1.8,4,4,4h93.661
+				c2.2,0,4-1.8,4-4V160.477z"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#05BAB9" stroke-width="2" stroke-miterlimit="10" d="M116.037,38.483c0-4.4-3.6-8-8-8H22.376
+				c-4.4,0-8,3.6-8,8v57.58c0,4.4,3.6,8,8,8h85.661c4.4,0,8-3.6,8-8V38.483z"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#05BAB9" stroke-width="2" stroke-miterlimit="10" d="M225.83,38.483c0-4.4-3.6-8-8-8h-85.66
+				c-4.4,0-8,3.6-8,8v57.58c0,4.4,3.6,8,8,8h85.66c4.4,0,8-3.6,8-8V38.483z"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#05BAB9" stroke-width="2" stroke-miterlimit="10" d="M335.624,38.483c0-4.4-3.6-8-8-8h-85.661
+				c-4.4,0-8,3.6-8,8v57.58c0,4.4,3.6,8,8,8h85.661c4.4,0,8-3.6,8-8V38.483z"/>
+		</g>
+		<g>
+			<path fill="#782779" d="M225.83,160.477c0-2.2-1.8-4-4-4h-93.66c-2.2,0-4,1.8-4,4v45.879c0,2.2,1.8,4,4,4h93.66c2.2,0,4-1.8,4-4
+				V160.477z"/>
+		</g>
+		<g>
+			<path fill="#782779" d="M335.624,160.477c0-2.2-1.8-4-4-4h-93.661c-2.2,0-4,1.8-4,4v45.879c0,2.2,1.8,4,4,4h93.661
+				c2.2,0,4-1.8,4-4V160.477z"/>
+		</g>
+		<g>
+			<path fill="#A24499" d="M335.624,124.954c0-2.2-1.8-4-4-4H18.376c-2.2,0-4,1.8-4,4v20.33c0,2.2,1.8,4,4,4h313.248
+				c2.2,0,4-1.8,4-4V124.954z"/>
+		</g>
+		<g>
+			<path fill="#4DC2C0" d="M110.14,72.15c0,2.2-1.8,4-4,4H24.272c-2.2,0-4-1.8-4-4V40.3c0-2.2,1.8-4,4-4h81.867c2.2,0,4,1.8,4,4
+				V72.15z"/>
+		</g>
+		<g>
+			<path fill="#4DC2C0" d="M219.934,72.15c0,2.2-1.8,4-4,4h-81.867c-2.2,0-4-1.8-4-4V40.3c0-2.2,1.8-4,4-4h81.867c2.2,0,4,1.8,4,4
+				V72.15z"/>
+		</g>
+		<g>
+			<path fill="#4DC2C0" d="M329.727,72.15c0,2.2-1.8,4-4,4h-81.867c-2.2,0-4-1.8-4-4V40.3c0-2.2,1.8-4,4-4h81.867c2.2,0,4,1.8,4,4
+				V72.15z"/>
+		</g>
+		<rect x="45.382" y="50.815" fill="none" width="39.647" height="14.71"/>
+		<text transform="matrix(1 0 0 1 47.6743 60.6343)" fill="#010101" font-family="'Lato-Bold'" font-size="13.2159">Nginx</text>
+		<rect x="25.264" y="168.422" fill="none" width="79.296" height="29.543"/>
+		<text transform="matrix(1 0 0 1 47.3804 178.2407)"><tspan x="0" y="0" fill="#E8E8E8" font-family="'Lato-Bold'" font-size="13.2159">Nginx</tspan><tspan x="-0.519" y="15.859" fill="#E8E8E8" font-family="'Lato-Bold'" font-size="13.2159">Image</tspan></text>
+		<rect x="135.352" y="168.422" fill="none" width="79.295" height="29.543"/>
+		<text transform="matrix(1 0 0 1 162.5859 178.2407)"><tspan x="0" y="0" fill="#E8E8E8" font-family="'Lato-Bold'" font-size="13.2159">RoR</tspan><tspan x="-5.637" y="15.859" fill="#E8E8E8" font-family="'Lato-Bold'" font-size="13.2159">Image</tspan></text>
+		<rect x="246.162" y="168.422" fill="none" width="79.295" height="29.543"/>
+		<text transform="matrix(1 0 0 1 259.668 178.2407)"><tspan x="0" y="0" fill="#E8E8E8" font-family="'Lato-Bold'" font-size="13.2159">Logstash</tspan><tspan x="8.092" y="15.859" fill="#E8E8E8" font-family="'Lato-Bold'" font-size="13.2159">Image</tspan></text>
+		<rect x="20.271" y="130.243" fill="none" width="309.455" height="11.214"/>
+		<text transform="matrix(1 0 0 1 140.8428 140.0625)" fill="#010101" font-family="'Lato-Bold'" font-size="13.2159">host Kernel</text>
+		<rect x="20.271" y="243.594" fill="none" width="309.455" height="11.215"/>
+		<text transform="matrix(1 0 0 1 143.3638 253.4146)" fill="#010101" font-family="'Lato-Bold'" font-size="13.2159">bare metal</text>
+		<rect x="155.175" y="50.815" fill="none" width="39.648" height="13.246"/>
+		<text transform="matrix(1 0 0 1 162.5854 60.6343)" fill="#010101" font-family="'Lato-Bold'" font-size="13.2159">RoR</text>
+		<rect x="244.343" y="50.815" fill="none" width="79.804" height="13.246"/>
+		<text transform="matrix(1 0 0 1 258.1035 60.6343)" fill="#010101" font-family="'Lato-Bold'" font-size="13.2159">Logstash</text>
+	</g>
+	<rect x="67.707" fill="none" width="218.355" height="13.247"/>
+	<text transform="matrix(1 0 0 1 129.5825 9.8198)" fill="#05BAB9" font-family="'Lato-Bold'" font-size="13.2159">Linux Container</text>
+</g>
+</svg>
