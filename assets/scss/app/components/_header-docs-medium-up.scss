@@ -5,41 +5,41 @@
 	left: 0;
 	width: 100%;
 	z-index: 10;
-		
+
 	img {
 		width: 300px;
-		
+
 		@media #{$large-up} {
-			width: 515px;	
+			width: 300px;
 		}
 	}
-		
+
 	nav {
-		
+
 		&.main-nav {
 			padding-left: 104px;
-			
+
 			@media #{$large-up} {
-				padding-left: 181px;	
+				padding-left: 105px;
 			}
 		}
-		
+
 		&:last-child {
 			position: fixed;
 			right: .9375rem;
 			top: 24px;
-			
+
 		}
 	}
-	
+
 	ul {
 		font-size: rem(14);
-		
+
 		li {
 			line-height: 32px;
 		}
 	}
-	
+
 	&:after {
 		content: "";
 		position: fixed;
