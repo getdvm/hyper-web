@@ -132,7 +132,7 @@
       <div class="row doc-block">
 
         <div class="columns small-12 large-8 large-offset-2">
-
+          <h3 class="pricing-header">Container</h3>
           <table role="grid" class="hyper-table hyper-table-alt">
 
             <thead>
@@ -264,14 +264,58 @@
 
           <ul>
 
-            <li>All containers have a default root volume of 10GB.</li>
+            <li>Billing begins when Hyper_ launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).</li>
 
-            <li>Network traffic (In/Out) is free.</li>
+            <li>Everytime you issue a <code>hyper run/start/restart</code> request, a default period of 10 second is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.</li>
+
+            <li>Everytime a container is restarted, a default period of 10 second is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.</li>
 
           </ul>
 
         </div>
 
+      </div>
+
+      <div class="row doc-block">
+        <div class="columns small-12 large-10 large-offset-1">
+          <h3 class="pricing-header">Storage</h3>
+          <ul>
+            <li>Image: $0.1/GB/month</li>
+            <li>Volume: $0.1/GB/month</li>
+            <li>
+              Snapshot: $0.05/GB/month
+              <ul>
+                <li>Billing begins when the storage object is created (<code>hyper volume create</code>, <code>hyper snapshot create</code>, <code>hyper pull</code>), ends upon removal.</li>
+                <li>Images less than 1GB will be charge for 1GB</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row doc-block">
+        <div class="columns small-12 large-10 large-offset-1">
+          <h3 class="pricing-header">Network</h3>
+          <ul>
+            <li>
+              Floating IP: $1/IP/month
+              <ul>
+                <li>Billing begins when a new Floating IP is allocated, ends when it is released. Partial month is treated as a entire month.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row doc-block">
+        <div class="columns small-12 large-10 large-offset-1">
+          <h3 class="pricing-header">Tax</h3>
+          <ul>
+            <li>
+              Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax.
+            </li>
+          </ul>
+        </div>
       </div>
 
     </div>

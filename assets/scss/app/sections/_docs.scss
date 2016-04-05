@@ -1,15 +1,15 @@
 .docs {
-		
+
 	#main {
 		padding-top: 50px;
-		
+
 		img {
 			max-width: 100%;
 			display: block;
 			margin: auto;
 		}
 	}
-	
+
 	h1,
 	h2,
 	h3 {
@@ -18,17 +18,17 @@
 		font-family: $fontText;
 		font-weight: 800;
 	}
-	
+
 	h1,
 	h2 {
 		font-size: 18px;
 	}
-	
+
 	pre {
 		@include rounded(0);
 		margin-bottom: 1.25rem;
 	}
-	
+
 	code {
 		border: none;
 		color: #32ea32;
@@ -38,15 +38,19 @@
 		font-size: 14px;
 		text-shadow: none;
 	}
-	
+
 	p {
-		
+
 		a {
 			color: $violetLight;
 		}
 	}
-	
+
 	.doc-block {
 		margin-bottom: 50px;
+	}
+
+	.pricing-header {
+		text-align: center;
 	}
 }
