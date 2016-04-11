@@ -21,17 +21,43 @@ var toggleAccordionNavs = function() {
 
 $(function(){
 	
+	// Wire up Videos and Slideshow
+	
 	$(".cycle-slideshow").on("cycle-update-view", function(event, optionHash, slideOptionsHash, currentSlideEl) {
-		
+				
 		// Stop videos
 			    
 	    $(".cycle-slideshow video").each(function(index, el){
-		    el.play();
+		    el.pause();
 	    });
 	    
-	    // Play current video
-	    	    
-	    $(currentSlideEl).find("video").get(0).play();
+	    // If the slideshow is in the viewport, play current video
+	    if($currentSlideEl.is(":in-viewport")) {
+			$currentSlideEl.find("video").get(0).play();    
+	    }
+	});
+	
+	// Pause videos when out of the viewport
+	
+	$(window).scroll(function(){
+		
+		var $start = $("section.start");
+		var $slideshow = $(".cycle-slideshow");
+		var $video = $("section.start video");
+		
+		if ( !$start.is(":in-viewport") ) {
+			$video.get(0).pause();
+		}
+		else {
+			$video.get(0).play();
+		}
+		
+		if ( $slideshow.is(":in-viewport") ) {
+			$slideshow.cycle('resume');
+		}
+		else {			
+			$slideshow.cycle('pause');
+		}		
 	});
 	
 	
@@ -114,6 +140,6 @@ $(function(){
 			} else {
 				el.css("position","static");
 			}
-		}    
+		}   	
 	});
 });

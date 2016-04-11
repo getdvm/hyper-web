@@ -11,3 +11,4 @@ node_modules
 npm-debug.log
 assets/css/style.min.css.map
 assets/js/bundle.js
+assets/js/bundle.min.js

@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 			all : {
 				dest : "js/bundle.js",
 				exclude : ["modernizr"],
-				include : ["jquery", "prism", "vide", "jquery-cycle2", "jquery.scrollTo"]
+				include : ["jquery", "prism", "vide", "jquery-cycle2", "jquery.scrollTo", "isInViewport"]
 			}
 		},
 		
@@ -49,35 +49,6 @@ module.exports = function(grunt) {
   			}
 		}
 	});
-	
-	/*
-		TODO: watch files
-		http://fuseinteractive.ca/blog/automating-bower-library-integration-grunt#.VjgDwq6rSRt
-		
-		shell: {
-			//...
-			bowerinstall: {
-				command: function(libname){
-					return "bower install " + libname + " -S";
-				}
-			},
-			bowerupdate: {
-				command: function(libname){
-					return "bower update " + libname;
-				}
-			}
-		}
-	
-		grunt.registerTask("bowerinstall", function(library) {
-			grunt.task.run("shell:bowerinstall:" + library);
-			grunt.task.run("buildbower");
-		});
-	
-		grunt.registerTask("bowerupdate", function(library) {
-			grunt.task.run("shell:bowerupdate:" + library);
-			grunt.task.run("buildbower");
-		});
-	*/
 	
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-bower-concat");
