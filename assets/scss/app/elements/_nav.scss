@@ -1,30 +1,30 @@
 nav.menu {
-	
+
 	ul {
 		margin: 0;
 		list-style: none;
 	}
-	
+
 	&.accordion {
-		
+
 		> ul {
-			
+
 		}
-		
+
 		> ul {
-			
-			> li {			
+
+			> li {
 				color: $blueDark;
-				
+
 				> a {
 					color: $blueDark;
 				}
-				
+
 				@media #{$small-only} {
 					position: relative; // Set context for Social Networks menu on Footer
-					line-height: 40px;		
+					line-height: 40px;
 				}
-				
+
 				&:before {
 					content: "> ";
 					position: absolute;
@@ -32,53 +32,53 @@ nav.menu {
 					top: 0;
 					width: 10px;
 				}
-				
+
 				> nav.white {
-					
+
 					@media #{$small-only} {
-						display: none;			
+						display: none;
 					}
-					
+
 					color: white;
-					font-family: $fontText;					
-					
+					font-family: $fontText;
+
 					a {
 						color: white;
 					}
-					
+
 					ul {
 						padding: 20px 6px 0 6px;
 						font-size: .8rem;
 					}
 				}
-			}	
+			}
 		}
-		
+
 		@media #{$medium-up} {
-			
+
 			> ul {
-				
+
 				> li {
 					position: relative;
-					
+
 					&:before {
-						content: "";	
+						content: "";
 						background-color: $violetLight;
 						height: 2px;
 						width: 24px;
 						top: -2px;
 					}
 				}
-			}			
+			}
 		}
-		
+
 		.accordion-menu-toggle {
-			
+
 			@media #{$small-only} {
 				display: block;
 			    float: left;
 			    width: 100%;
-			    padding-left: 10px;			
+			    padding-left: 10px;
 			}
 		}
 	}
@@ -93,82 +93,83 @@ nav.menu {
 
 nav.menu {
 	font-family: $fontRoundedBold;
-	
+
 	> ul > li {
-			
+
 		a {
-			
+
 		}
-		
+
 		nav {
 			margin: 0;
 			font-weight: 400;
 			font-family: $fontText;
 			text-transform: none!important;
 		}
-		
+
 		ul {
 			margin: 0;
 		}
 	}
-	
+
 	&.vertical {
-		
+
 		> ul {
-			
+
 			> li {
-				
+
 				&:before {
 					content: "> ";
 				}
-			}	
+			}
 		}
 	}
-	
+
 	&.horizontal {
-		
+
 		> ul > li {
 			display: inline-block;
-			
+
 			&:after {
 				content: " •";
 			}
-			
+
 			&:last-child {
-				
+
 				&:after {
 					content: "";
 				}
 			}
 		}
 	}
-	
+
 	&.button-group {
-		
+
 		> ul > li {
-			
+
 			&:after {
 				content: "";
 			}
 		}
 	}
-	
+
 	&.violet-light {
-		
+
 		a {
 			@extend .violet-light;
 		}
 	}
-	
+
 	&.blue-dark {
-		
+
 		a {
 			@extend .blue-dark;
+			font-size: 0.9rem;
 		}
 	}
-	
+
 	&.white {
-		
+
 		a {
 			@extend .white;
 		}

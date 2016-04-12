@@ -1,35 +1,35 @@
 table.hyper-table {
 	width: 100%;
 	margin-top: 30px;
-	
+
 	i {
 		display: inline-block;
 		background: white;
 		@include rounded();
-		
+
 		&.good {
 			width: 12px;
-			height: 12px;	
+			height: 12px;
 		}
-		
+
 		&.bad {
 			width: 7px;
 			height: 7px;
 			margin-bottom: 1px;
 		}
-		
+
 		@media #{$large-up} {
-			display: none;			
+			display: none;
 		}
 	}
-	
+
 	thead,
 	tfoot {
-			
+
 		tr {
 			position: relative;
 		}
-				
+
 		th {
 			transform: translateY(-10px);
 			color: white;
@@ -41,73 +41,80 @@ table.hyper-table {
 			height: 1px;
 			line-height: 0;
 			padding: 0 0 5px 0;
-			
+
 			@media #{$medium-up} {
-				font-size: 15px;			
+				font-size: 15px;
 			}
 		}
 	}
-	
+
 	tbody {
-		
+
 		tr {
-			
+
 			&:nth-of-type(odd) {
 				background: rgba(255, 255, 255, .2);
 			}
-			
+
 			&:after {
 			    content: "";
 			    width: 5px;
 			    height: 100%;
 			    display: block;
 			}
+
+			@media #{$small-only} {
+				th, td {
+					padding: .5625rem .2rem;
+				}
+			}
+
 		}
-		
+
 		th {
 			text-transform: uppercase;
 			font-family: $fontRoundedBold;
 			font-size: 11px;
-			
+
 			@media #{$medium-up} {
-				font-size: 14px;			
+				font-size: 14px;
 			}
 		}
-		
+
 		td {
 			color: $violetLight;
 			text-align: center;
 			line-height: 9px;
-			
+
 			span {
 				display: none;
-				
+
 				@media #{$large-up} {
-					display: block;			
+					display: block;
 				}
 			}
 		}
 	}
-	
+
 	&.hyper-table-alt {
-		
+
 		thead,
 		tfoot {
-				
+
 			th {
 				color: $jet;
 			}
 		}
-		
+
 		tbody {
-		
+
 			tr {
-				
+
 				&:nth-of-type(odd) {
 					background: rgba(1, 186, 186, .2);
 				}
 			}
-			
+
 			td {
 				color: $jet;
 			}
