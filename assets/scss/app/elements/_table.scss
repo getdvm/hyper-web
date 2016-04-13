@@ -41,6 +41,7 @@ table.hyper-table {
 			height: 1px;
 			line-height: 0;
 			padding: 0 0 5px 0;
+			white-space: nowrap;
 			
 			@media #{$medium-up} {
 				font-size: 15px;			
@@ -113,4 +114,11 @@ table.hyper-table {
 			}
 		}
 	}
+}
+
+
+// Wrap +3 columns tables in a div with this class to make it readable in small devices
+
+.responsive-table-wrapper {
+	overflow-x: scroll;
 }
