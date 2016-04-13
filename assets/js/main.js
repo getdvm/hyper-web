@@ -19,46 +19,113 @@ var toggleAccordionNavs = function() {
 		el.show();
 }
 
+function checkHeaderVideoStatus($start, $video, headerVideoPlaying) {
+	
+	// Check the status of the header video
+		
+	// If the start section is not in the viewport..
+	
+	if ( !$start.is(":in-viewport")) {
+		
+		// And the video is playing..
+			
+		if (headerVideoPlaying) {
+			
+			// Pause the video
+			
+			$video.get(0).pause();
+		}	
+	}
+	
+	// If is in the viewport
+	
+	else {
+		
+		// And is not playing
+		
+		if (!headerVideoPlaying) {
+			
+			// Resume video
+			
+			$video.get(0).play();
+			
+			headerVideoPlaying = true;	
+		}	
+	}	
+}
+
+function checkSlideshowStatus($slideshow, cyclePaused, currentSlideEl) {
+	
+	if( $slideshow.is(":in-viewport") ) {
+		
+		$slideshow.cycle("resume");
+	}
+	else {
+		
+		$slideshow.cycle("pause");
+	}	
+}
+
+
+
 $(function(){
+	
+	var $start = $("section.start");
+	var $video = $("section.start video");
+	var $slideshow = $(".cycle-slideshow");
+	var headerVideoPlaying = true;
+	var cyclePaused;
+	
+	checkHeaderVideoStatus($start, $video, headerVideoPlaying);
+	
+	$(window).scroll(function(){
+		checkHeaderVideoStatus($start, $video, headerVideoPlaying);
+		checkSlideshowStatus($slideshow, cyclePaused, false);
+	});
+
+	// Flag to check if the header video is playing
+	
+	$video.on("pause", function (e) {
+		headerVideoPlaying = false;	
+	});
+	
+	$video.on("playing", function (e) {
+		headerVideoPlaying = true;	
+	});
 	
 	// Wire up Videos and Slideshow
 	
-	$(".cycle-slideshow").on("cycle-update-view", function(event, optionHash, slideOptionsHash, currentSlideEl) {
-				
-		// Stop videos
-			    
-	    $(".cycle-slideshow video").each(function(index, el){
-		    el.pause();
-	    });
-	    
-	    // If the slideshow is in the viewport, play current video
-	    if($currentSlideEl.is(":in-viewport")) {
-			$currentSlideEl.find("video").get(0).play();    
-	    }
+	$slideshow.on("cycle-paused", function(event, optionHash) {
+		
+		$(".cycle-slideshow video").each(function(index, el){
+		    el.pause();    
+	    }); 
+		
+		cyclePaused = true;
 	});
 	
-	// Pause videos when out of the viewport
-	
-	$(window).scroll(function(){
+	$slideshow.on("cycle-resumed", function(event, optionHash) {
 		
-		var $start = $("section.start");
-		var $slideshow = $(".cycle-slideshow");
-		var $video = $("section.start video");
+		var currentSlide = $(".cycle-slideshow").find(".features__slide").get(optionHash["currSlide"] + 1);
 		
-		if ( !$start.is(":in-viewport") ) {
-			$video.get(0).pause();
-		}
-		else {
-			$video.get(0).play();
-		}
+		$(currentSlide).find("video").get(0).play();
 		
-		if ( $slideshow.is(":in-viewport") ) {
-			$slideshow.cycle('resume');
-		}
-		else {			
-			$slideshow.cycle('pause');
-		}		
+		cyclePaused = false;
 	});
+	
+	$slideshow.on("cycle-update-view", function(event, optionHash, slideOptionsHash, currentSlideEl) {
+		
+		checkSlideshowStatus($slideshow);
+		
+		if (!cyclePaused) {
+			
+			$(".cycle-slideshow video").each(function(index, el){			
+			    el.pause();
+		    });	
+		    
+		    $(currentSlideEl).find("video").get(0).play();
+		}
+	});	
 	
 	
 	// Mobile menu toggle
