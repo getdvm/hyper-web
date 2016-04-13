@@ -21,6 +21,8 @@ var toggleAccordionNavs = function() {
 
 function checkHeaderVideoStatus($start, $video, headerVideoPlaying) {
 	
+	if (isSmall()) return;
+	
 	// Check the status of the header video
 		
 	// If the start section is not in the viewport..
@@ -97,6 +99,8 @@ $(function(){
 	
 	$slideshow.on("cycle-paused", function(event, optionHash) {
 		
+		if (isSmall()) return;
+		
 		$(".cycle-slideshow video").each(function(index, el){
 		    el.pause();    
 	    }); 
@@ -106,6 +110,8 @@ $(function(){
 	
 	$slideshow.on("cycle-resumed", function(event, optionHash) {
 		
+		if (isSmall()) return;
+		
 		var currentSlide = $(".cycle-slideshow").find(".features__slide").get(optionHash["currSlide"] + 1);
 		
 		$(currentSlide).find("video").get(0).play();
@@ -114,6 +120,8 @@ $(function(){
 	});
 	
 	$slideshow.on("cycle-update-view", function(event, optionHash, slideOptionsHash, currentSlideEl) {
+		
+		if (isSmall()) return; 
 		
 		checkSlideshowStatus($slideshow);
 		
