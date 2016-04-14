@@ -31,7 +31,7 @@ function checkHeaderVideoStatus($start, $video, headerVideoPlaying) {
 		
 		// And the video is playing..
 			
-		if (headerVideoPlaying) {
+		if (headerVideoPlaying && $video.get(0)) {
 			
 			// Pause the video
 			
