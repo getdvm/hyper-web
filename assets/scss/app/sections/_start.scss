@@ -42,7 +42,7 @@
 
 	h2, h3 {
 		color: white;
-		font-weight: bold;
+		// font-weight: bold;
 		font-family: $fontText;
 		font-size: 20px;
 		@media #{$small-only} {
@@ -88,7 +88,7 @@
 
 		@media #{$large-up} {
 			width: 450px;
-			transform: translateX(-154px);
+			transform: translateX(-57px);
 		}
 	}
 }
