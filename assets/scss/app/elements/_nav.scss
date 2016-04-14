@@ -18,6 +18,10 @@ nav.menu {
 				
 				> a {
 					color: $blueDark;
+					
+					@media #{$large-up} {
+						font-size: 20px;			
+					}
 				}
 				
 				@media #{$small-only} {
@@ -47,8 +51,14 @@ nav.menu {
 					}
 					
 					ul {
-						padding: 20px 6px 0 6px;
+						padding: 20px 0 0 0;
 						font-size: .8rem;
+						
+						li {
+							@media #{$large-up} {
+								font-size: 16px;		
+							}
+						}
 					}
 				}
 			}	
