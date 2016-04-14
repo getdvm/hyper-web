@@ -36,7 +36,10 @@
 		font-size: rem(14);
 
 		li {
-			line-height: 32px;
+			
+			a {
+				line-height: 32px;
+			}
 		}
 	}
 

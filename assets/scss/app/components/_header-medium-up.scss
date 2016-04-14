@@ -21,8 +21,11 @@
 	ul {
 		font-size: rem(14);
 		
-		li {
-			line-height: 32px;
+		li {	
+			
+			a {
+				line-height: 32px;	
+			}
 		}
 	}
 }
