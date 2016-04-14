@@ -38,12 +38,23 @@ table.hyper-table {
 			font-size: 11px;
 			text-align: center;
 			border: none;
-			height: 1px;
-			line-height: 0;
-			padding: 0 0 5px 0;
+			white-space: nowrap;
+			padding: 5px 5px 0 5px;
 
 			@media #{$medium-up} {
+				height: 1px;
+				line-height: 0;
 				font-size: 15px;
+				padding: 0 0 5px 0;
+
+				br {
+					display: none;
+				}
+
+			}
+
+			@media #{$small-only} {
+
 			}
 		}
 	}
@@ -120,4 +131,19 @@ table.hyper-table {
 			}
 		}
 	}
+}
+
+
+@media #{$small-only} {
+
+	colgroup {
+		display: none!important;
+	}
+}
+
+
+// Wrap +3 columns tables in a div with this class to make it readable in small devices
+
+.responsive-table-wrapper {
+	overflow-x: scroll;
 }
