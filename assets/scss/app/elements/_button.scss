@@ -58,6 +58,12 @@ button {
 	@media #{$medium-up} {
 		font-size: 18px;			
 	}
+	
+	&:hover {
+		color: $violetDark;
+		background: transparent url($imgsPath + 'plus-hover.svg') no-repeat left top;
+		background-size: contain;
+	}
 }
 
 button::-moz-focus-inner {border:0; padding:0;}
