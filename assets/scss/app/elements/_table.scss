@@ -138,4 +138,8 @@ table.hyper-table {
 
 .responsive-table-wrapper {
 	overflow-x: scroll;
+	
+	@media #{$large-up} {
+		overflow-x: visible;
+	}
 }
