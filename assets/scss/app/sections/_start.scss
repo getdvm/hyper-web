@@ -12,6 +12,13 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
+	
+	> div {
+		
+		@media #{$large-up} {
+			background: none!important;	// Hide video poster image on large devices
+		}
+	}
 
 	h1 {
 		font-family: $fontRoundedBold;
