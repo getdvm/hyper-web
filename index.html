@@ -16,7 +16,11 @@
 
         <link rel="stylesheet" href="assets/css/style.min.css">
 
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="assets/js/vendor/asciicast/asciinema-player.css">
+
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <script src="assets/js/vendor/asciicast/asciinema-player.js"></script>
 
     </head>
 
@@ -437,6 +441,78 @@
 
         </div>
 
+        <div class="row">
+          <div class="columns small-11 small-offset-1">
+
+            <h2>Use Cases</h2>
+
+            <p>Hyper_ uses a technology called HyperContainer to apply hardware-enforced isolation to containers, while keeping the sub-second startup performance. Instead of running Cgroup and Namespace, HyperContainer launches the Docker images with plain hypervisor. HyperContainer provides the best of both worlds giving you the security of virtual machines with the speed of containers.</p>
+
+          </div>
+        </div>
+
+        <div class="cases__header">
+
+          <div class="row">
+
+            <div class="columns small-12 large-10 large-offset-1">
+
+              <div class="cases__pager"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="columns small-12 medium-10 medium-offset-1">
+
+            <div
+              class="cycle-slideshow"
+              data-cycle-fx="fadeout"
+              data-cycle-log="false"
+              data-cycle-timeout="26000"
+              data-pause-on-hover="false"
+              data-cycle-slides=".cases__slide"
+              data-cycle-pager=".cases__pager"
+              >
+
+              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>python app with linked postgres</span></a>">
+
+                <div class="intro"></div>
+                <div id="asciicast" class="asciicast"></div>
+
+                <script>
+                    asciinema_player.core.CreatePlayer('asciicast', '/assets/js/vendor/asciicast/1.json', { width: 181, height: 20, speed: 10 });
+                </script>
+              </div>
+
+              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>LB with 2 web servers</span></a>">
+
+                <p>Your applications run with hardware enforced isolation giving you the security of virtual machines with the speed of containers.</p>
+
+              </div>
+
+              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>volume and snapshot</span></a>">
+
+                <p>Sub-second start up times allow you to meet your user’s demands without wasting money on over-provisioning.</p>
+
+              </div>
+
+              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>fip failover</span></a>">
+
+                <p>Run stateful workload using HYPER_’s replicated, distributed and fault-tolerant storage.</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
 
       <section class="get-started">
@@ -478,7 +554,7 @@
                       <li><a href="/pricing.html">Pricing</a></li>
 
                       <li><a href="/hyper-container.html">HyperContainer</a></li>
-                      
+
                       <li><a href="/faq.html">FAQ</a></li>
 
                     </ul>

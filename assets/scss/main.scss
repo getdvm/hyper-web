@@ -103,27 +103,27 @@ $gradientGreenTurquoise : url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDov
     "../bower_components/foundation/scss/foundation/components/type",
 //	"../bower_components/foundation/scss/foundation/components/offcanvas",
 	"../bower_components/foundation/scss/foundation/components/visibility";
-	
-	
+
+
 // Prism: http://prismjs.com/
 
-@import 
+@import
 	"../bower_components/prism/themes/prism.css",
-	"../bower_components/prism/themes/prism-okaidia.css";	
+	"../bower_components/prism/themes/prism-okaidia.css";
 
 // App
-@import 
+@import
 	"app/base";
 
 // Elements
-@import 
+@import
 	"app/elements/nav",
 	"app/elements/map",
 	"app/elements/button",
 	"app/elements/table";
 
 // Components
-@import 
+@import
 	"app/components/footer",
 	"app/components/header",
 	"app/components/header-small",
@@ -131,13 +131,10 @@ $gradientGreenTurquoise : url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDov
 	"app/components/header-docs-medium-up";
 
 // Sections
-@import 
+@import
 	"app/sections/start",
 	"app/sections/get-started",
 	"app/sections/features",
 	"app/sections/why-hyper",
+	"app/sections/cases",
 	"app/sections/docs";
-	
-	
-	
-	
