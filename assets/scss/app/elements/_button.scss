@@ -54,6 +54,7 @@ button {
 	line-height: 22px;
 	background: transparent url($imgsPath + 'plus.svg') no-repeat left top;
 	background-size: contain;
+	margin-bottom: 10px;
 	
 	@media #{$medium-up} {
 		font-size: 18px;			

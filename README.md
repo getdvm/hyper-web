@@ -12,10 +12,6 @@ Install dependencies:
 
 `bower update`
 
-Compile and watch styles:
+Compile and watch styles and scripts:
 
-`grunt buildstyles`
-
-Compile and watch scripts:
-
-`grunt buildscripts`
+`grunt`

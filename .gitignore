@@ -10,6 +10,4 @@ js/bundle.min.js
 node_modules
 npm-debug.log
 assets/css/style.min.css.map
-assets/css/style.min.css
 assets/js/bundle.js
-assets/js/bundle.min.js
