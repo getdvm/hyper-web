@@ -11,10 +11,6 @@
   },
   "stdout": [
     [
-      0.026940,
-      "\u001b]7;file://192.168.1.101/Users/harryz/Downloads\u0007"
-    ],
-    [
       0.000062,
       "\u001b[?1034h\u001b[1;32m-\u003e \u001b[0m"
     ],
@@ -745,34 +741,6 @@
     [
       0.000158,
       "\u001b[1;32m-\u003e \u001b[0m"
-    ],
-    [
-      2.343104,
-      "logout\r\n"
-    ],
-    [
-      0.000200,
-      "Saving session..."
-    ],
-    [
-      0.010007,
-      "\r\n...copying shared history..."
-    ],
-    [
-      0.003311,
-      "\r\n...saving history..."
-    ],
-    [
-      0.006055,
-      "truncating history files..."
-    ],
-    [
-      0.000345,
-      "\r\n..."
-    ],
-    [
-      0.000142,
-      "completed.\r\n"
     ]
   ]
 }
