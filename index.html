@@ -446,8 +446,6 @@
 
             <h2>Use Cases</h2>
 
-            <p>Hyper_ uses a technology called HyperContainer to apply hardware-enforced isolation to containers, while keeping the sub-second startup performance. Instead of running Cgroup and Namespace, HyperContainer launches the Docker images with plain hypervisor. HyperContainer provides the best of both worlds giving you the security of virtual machines with the speed of containers.</p>
-
           </div>
         </div>
 
@@ -479,31 +477,43 @@
               data-cycle-pager=".cases__pager"
               >
 
-              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>python app with linked postgres</span></a>">
+              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>web app with database</span></a>">
 
-                <div class="intro"></div>
-                <div id="asciicast" class="asciicast"></div>
-
-                <script>
-                    asciinema_player.core.CreatePlayer('asciicast', '/assets/js/vendor/asciicast/1.json', { width: 181, height: 20, speed: 10 });
-                </script>
-              </div>
-
-              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>LB with 2 web servers</span></a>">
-
-                <p>Your applications run with hardware enforced isolation giving you the security of virtual machines with the speed of containers.</p>
+                <div class="intro">
+                  <img src="/assets/imgs/case1.svg" class="graph">
+                  <div class="desc">a web application consumes PostgreSQL by Docker style link</div>
+                </div>
+                <div id="asciicast1" class="asciicast"></div>
 
               </div>
 
-              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>volume and snapshot</span></a>">
+              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>load balancer with two web servers</span></a>">
 
-                <p>Sub-second start up times allow you to meet your user’s demands without wasting money on over-provisioning.</p>
+                <div class="intro">
+                  <img src="/assets/imgs/case2.svg" class="graph">
+                  <div class="desc">a load balancer with public IP to proxy two web servers</div>
+                </div>
+                <div id="asciicast2" class="asciicast"></div>
 
               </div>
 
-              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>fip failover</span></a>">
+              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>volume snapshot and restore</span></a>">
 
-                <p>Run stateful workload using HYPER_’s replicated, distributed and fault-tolerant storage.</p>
+                <div class="intro">
+                  <img src="/assets/imgs/case3.svg" class="graph">
+                  <div class="desc">create a persistent volume, snapshot it, and restore the volume from snapshot</div>
+                </div>
+                <div id="asciicast3" class="asciicast"></div>
+
+              </div>
+
+              <div class="cases__slide" data-cycle-pager-template="<a href=#><span>floating IP failover</span></a>">
+
+                <div class="intro">
+                  <img src="/assets/imgs/case4.svg" class="graph">
+                  <div class="desc">associate a floating IP to one web server, failover when this web server is down</div>
+                </div>
+                <div id="asciicast4" class="asciicast"></div>
 
               </div>
 
