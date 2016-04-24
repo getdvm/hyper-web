@@ -1,5 +1,5 @@
 var createAssciimaPlayer = function(num) {
-	asciinema_player.core.CreatePlayer('asciicast' + num, '/assets/js/vendor/asciicast/case' + num + '.json', { width: 181, height: 20, speed: 7 });
+	asciinema_player.core.CreatePlayer('asciicast' + num, '/assets/js/vendor/asciicast/case' + num + '.json', { width: 181, height: 18, speed: 7 });
 }
 
 createAssciimaPlayer(1);
