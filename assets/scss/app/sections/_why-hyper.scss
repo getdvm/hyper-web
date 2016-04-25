@@ -1,8 +1,8 @@
 .why-hyper {
-  background-image: $gradientGreenTurquoise;
+  // background-image: $gradientGreenTurquoise;
   background-size: cover;
-  padding-top: 118px;
-  padding-bottom: 102px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
   color: #303030;
 
@@ -24,7 +24,7 @@
     top: 0;
     height: 118px;
     left: 0;
-    background: url($imgsPath + 'why-block-top.svg') repeat-x center bottom;
+    // background: url($imgsPath + 'why-block-top.svg') repeat-x center bottom;
     width: 100%;
     z-index: 1;
   }
