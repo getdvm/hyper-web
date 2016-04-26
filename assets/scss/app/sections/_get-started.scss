@@ -3,27 +3,27 @@
 	text-align: center;
 	color: white;
 	padding-bottom: 20px;
-	
+
 	@media #{$medium-up} {
-		padding-bottom: 40px;			
+		padding-bottom: 40px;
 	}
-	
+
 	@media #{$large-up} {
-		padding-bottom: 65px;	
+		padding-bottom: 65px;
 	}
-	
+
 	h2 {
 		color: $turquoiseGradient;
 		margin: 0 0 20px 0;
 		font-size: rem(28);
 		font-weight: 800;
 		text-transform: uppercase;
-		
+
 		@media #{$medium-up} {
-			margin-bottom: 30px;			
+			margin-bottom: 30px;
 		}
 	}
-	
+
 	.get-started__sign-up-now {
 		display: inline-block;
 		height: 40px;
@@ -38,19 +38,19 @@
 		position: relative;
 		padding: 0 45px;
 		margin-bottom: 25px;
-		
+
 		@media #{$medium-up} {
 			font-size: 24px;
 			height: 50px;
 			line-height: 50px;
-			width: 250px;	
-			margin-bottom: 30px;	
+			width: 490px;	
+			margin-bottom: 30px;
 		}
-		
+
 		@media #{$large-up} {
-			
+
 		}
-		
+
 		&:before {
 			background: $gradientGreenTurquoise;
 			width: 100%;
@@ -60,7 +60,7 @@
 		    box-sizing: content-box;
 		    padding: 4px;
 		    top: -4px;
-		    left: -4px;	
+		    left: -4px;
 		    z-index: -1;
 		}
 	}
