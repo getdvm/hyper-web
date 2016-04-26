@@ -146,6 +146,11 @@
       }
       margin-bottom: 20px;
       visibility: visible;
+			@media #{$small-only} {
+				.asciinema-terminal {
+					overflow: auto;
+				}
+			}
     }
 	}
 
