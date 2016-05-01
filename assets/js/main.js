@@ -134,7 +134,7 @@ $(function(){
 	$slideshow.on("cycle-update-view", function(event, optionHash, slideOptionsHash, currentSlideEl) {
 
 		$('.cases__slide').css('z-index', 99);
-		$(currentSlideEl).css('z-index', 100)
+		$(currentSlideEl).css('z-index', 101)
 
 		if (isSmall()) return;
 
