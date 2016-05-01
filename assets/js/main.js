@@ -2,10 +2,12 @@ var createAssciimaPlayer = function(num) {
 	asciinema_player.core.CreatePlayer('asciicast' + num, '/assets/js/vendor/asciicast/case' + num + '.json', { width: 181, height: 18, speed: 7 });
 }
 
-createAssciimaPlayer(1);
-createAssciimaPlayer(2);
-createAssciimaPlayer(3);
-createAssciimaPlayer(4);
+try {
+	createAssciimaPlayer(1);
+	createAssciimaPlayer(2);
+	createAssciimaPlayer(3);
+	createAssciimaPlayer(4);
+} catch(err) {}
 
 function isSmall()
 {
