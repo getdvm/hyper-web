@@ -99,6 +99,9 @@
         width: 40%;
         float: left;
       }
+			@media #{$small-only} {
+				height: 280px;
+			}
       background-color: white;
       height: 333px;
       border: 2px solid $violetLight;
