@@ -81,8 +81,6 @@ table.hyper-table {
 		}
 
 		th {
-			text-transform: uppercase;
-			font-family: $fontRoundedBold;
 			font-size: 11px;
 
 			@media #{$medium-up} {
